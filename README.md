@@ -1,6 +1,6 @@
 <strong>Immediate disclaimer: I am not the first person to have this idea!</strong>
 
-After I made this algorithm I did some research and found a couple of references to the exact same process that people call "bitmap sorting". Its quite an obscure algorithm due to how limited the usecase is, but when it is useful it is devastatingly powerful. I also wondered if possibly this algorithm is so canonical and obvious that maybe thats why theres only a few mentions of it on the internet?
+I made this algorithm on my own, but afterwards I did some research and found a couple of references to the exact same process that people call "bitmap sorting". Its quite an obscure algorithm due to how limited the usecase is, but when it is useful it is devastatingly powerful. I also wondered if possibly this algorithm is so canonical and obvious that maybe thats why theres only a few mentions of it on the internet?
 
 This algorithm uses an array where the size of each array element is encoded not as a number object, but as the array inside an enormours boolean "bit list" array. Its very simple, so the code should be self-explanatory, but for example:
 The list [0,2,4,8] is represented as: [1,0,1,0,1,0,0,0,1]
