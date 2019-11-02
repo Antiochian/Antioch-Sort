@@ -13,4 +13,4 @@ I made this algorithm because this situation perfectly applies to the random arr
 
 Below is a graph comparing its performance to quicksort for various array sizes (x-axis is logarithmic):
 
-![comparison](antiochsort vs quicksort.png)
+![comparison](quicksort vs antiochsort.png)
