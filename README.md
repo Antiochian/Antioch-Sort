@@ -1,8 +1,8 @@
-This algorithm uses an array where the size of each array element is encoded not as a number object, but as the array inside an enormours boolean "bit list" array. Its very simple, so the code should be self-explanatory.
+<strong>Immediate disclaimer: I am not the first person to have this idea!</strong>
 
-<strong>(Immediate disclaimer: I am not the first person to have this idea!</strong>
+After I made this algorithm I did some research and found a couple of references to the exact same process that people call "bitmap sorting". Its quite an obscure algorithm due to how limited the usecase is, but when it is useful it is devastatingly powerful. I also wondered if possibly this algorithm is so canonical and obvious that maybe thats why theres only a few mentions of it on the internet?
 
-After I made this algorithm I did some research and found a couple of references to the exact same process that people call "bitmap sorting". Its quite an obscure algorithm due to how limited the usecase is, but when it is useful it is devastatingly powerful, and sorts in linear time!!! I also think that possibly this algorithm is so canonical and obvious that maybe thats why theres only a few mentions of it on the internet?
+This algorithm uses an array where the size of each array element is encoded not as a number object, but as the array inside an enormours boolean "bit list" array. Its very simple, so the code should be self-explanatory
 
 This algorithm only works if:
   - Unsorted array contains only integers greater than or equal to 0
@@ -13,4 +13,4 @@ I made this algorithm because this situation perfectly applies to the random arr
 
 Below is a graph comparing its performance to quicksort for various array sizes (x-axis is logarithmic):
 
-!()
+![comparison](antiochsort vs quicksort.png)
